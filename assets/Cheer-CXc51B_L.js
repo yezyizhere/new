@@ -1,0 +1,1 @@
+import{_ as e,a as t,o as c}from"./index-CE2vapuI.js";const r={},s={class:"flex w-full h-screen items-center text-center justify-center"};function n(o,_){return c(),t("div",s,"힘내라 힘!")}const f=e(r,[["render",n]]);export{f as default};
