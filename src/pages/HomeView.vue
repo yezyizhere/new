@@ -195,7 +195,12 @@ function getDdayPlus(startDateStr) {
           <div class="pt-3"><a :href="links[0]" rel="noopener">19.02.20 ITZY? ITZY!</a></div>
           <div class="pt-15"><a :href="links[1]" rel="noopener">20.11.26 한국에 있지</a></div>
           <div class="pt-15"><a :href="links[2]" rel="noopener">21.03.02 CSI</a></div>
-          <div class="pt-15"><a :href="links[3]" rel="noopener">21.12.06 bㅣㄴ틈있지 겨울방학 에디션</a></div>
+          <div class="pt-15">
+            <a :href="links[3]" rel="noopener"
+              >21.12.06<br />
+              bㅣㄴ틈있지 겨울방학
+            </a>
+          </div>
           <div class="pt-45"><a :href="links[4]" rel="noopener">22.09.21 LA에 있지</a></div>
           <div class="pt-20"><a :href="links[5]" rel="noopener">24.02.08 IT'ZZZ</a></div>
           <div class="pt-20"><a :href="links[6]" rel="noopener">24.11.14 IT'ZZZ S2</a></div>
@@ -262,30 +267,45 @@ function getDdayPlus(startDateStr) {
         <!-- 예지 -->
         <div class="pl-10 flex gap-2">
           <img src="https://lv2-cdn.azureedge.net/itzy/2aead6e90d624bdea2b95354ceb99a72-01-%EC%98%88%EC%A7%80-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
-          <div class="flex flex-col justify-end">YEJI / 예지 <br />2000.05.26</div>
+          <div class="flex flex-col justify-end">
+            <img src="/picture/sign/sign1.png" class="w-20" />
+            <p>YEJI / 예지 <br />2000.05.26</p>
+          </div>
         </div>
         <!-- 리아 -->
         <div class="pt-10 pl-10 flex gap-2">
-          <div class="flex flex-col justify-end">LIA / 리아 <br />2000.07.21</div>
+          <div class="flex flex-col justify-end">
+            <img src="/picture/sign/sign2.png" class="w-20 pb-2" />
+            <p>LIA / 리아 <br />2000.07.21</p>
+          </div>
           <img src="https://lv2-cdn.azureedge.net/itzy/21b7b47fecd942bfa78082ab26cd5e0e-02-%EB%A6%AC%EC%95%84-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
         </div>
         <!-- 류진 -->
         <div class="pt-10 pl-5 flex gap-2">
           <img src="https://lv2-cdn.azureedge.net/itzy/0ecc7a02fe0a4b359ebb5334c586bb1d-03-%EB%A5%98%EC%A7%84-%EA%B3%B5%ED%99%88-C1-2.jpg" class="w-50" />
-          <div class="flex flex-col justify-end">RYUJIN / 류진 <br />2001.04.17</div>
+          <div class="flex flex-col justify-end">
+            <img src="/picture/sign/sign3.png" class="w-20" />
+            <p>RYUJIN / 류진 <br />2001.04.17</p>
+          </div>
         </div>
         <!-- 채령 -->
         <div class="pt-10 pl-5 flex gap-2">
           <div class="flex flex-col justify-end">
-            CHAERYEONG <br />
-            채령 <br />2001.06.05
+            <img src="/picture/sign/sign4.png" class="w-20" />
+            <p>
+              CHAERYEONG <br />
+              채령 <br />2001.06.05
+            </p>
           </div>
           <img src="https://lv2-cdn.azureedge.net/itzy/e15c73e1b3be4b94ad97e904b1e92fc6-04-%EC%B1%84%EB%A0%B9-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
         </div>
         <!-- 유나 -->
         <div class="pt-10 pl-10 flex gap-2">
           <img src="https://lv2-cdn.azureedge.net/itzy/ec6f74c083be48dea326d2c01372bac9-05-%EC%9C%A0%EB%82%98-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
-          <div class="flex flex-col justify-end">YUNA / 유나 <br />2003.12.09</div>
+          <div class="flex flex-col justify-end">
+            <img src="/picture/sign/sign5.png" class="w-20" />
+            <p>YUNA / 유나 <br />2003.12.09</p>
+          </div>
         </div>
       </section>
     </Transition>
@@ -300,16 +320,8 @@ function getDdayPlus(startDateStr) {
 
       <div class="text-center pt-5">
         <p class="pb-2">팬덤 <a href="https://midzy.kr" class="text-pink-400">MIDZY(믿지)</a></p>
-        <p>
-          응원봉
-          <a href="https://app.fans/shop/i/product/uven9lilmm?mp=KR" class="pl-3">
-            <span class="text-orange-400">라</span>
-            <span class="text-violet-400">이</span>
-            <span class="text-purple-400">트</span>
-            <span class="text-rose-400">링</span>
-          </a>
-        </p>
-        <div class="pt-5"><i class="pt-5 select-none text-zinc-400">궁금한 것을 눌러보세요</i></div>
+        <p>응원봉 <a href="https://app.fans/shop/i/product/uven9lilmm?mp=KR" class="pl-3 gradient-text"> 라이트링 </a></p>
+        <div class="pt-5"><i class="pt-5 select-none text-zinc-400">모든 이미지와 글씨에 링크가 있습니다</i></div>
       </div>
     </section>
   </section>
@@ -335,5 +347,16 @@ function getDdayPlus(startDateStr) {
   max-height: 500px;
   opacity: 1;
   transform: translateY(0);
+}
+
+.gradient-text {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #1b1c1d 75%, #1b1c1d 100%);
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

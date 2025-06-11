@@ -25,6 +25,16 @@ const router = createRouter({
       name: 'liveyear',
       component: LiveYearPage,
     },
+    {
+      path: '/broadcast',
+      name: 'broadcast',
+      component: () => import('@/pages/Broadcast.vue'),
+    },
+    {
+      path: '/cheer',
+      name: 'cheer',
+      component: () => import('@/pages/Cheer.vue'),
+    },
   ],
 })
 
