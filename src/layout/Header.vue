@@ -13,7 +13,7 @@ function menuOpen() {
     <!-- 상단바 -->
     <nav class="h-full flex items-center justify-between mx-7">
       <!-- 홈 버튼 -->
-      <router-link to="/"><img src="../picture/logo.png" alt="ITZY" class="w-8 h-7" /></router-link>
+      <router-link to="/"><img src="/picture/logo.png" alt="ITZY" class="w-8 h-7" /></router-link>
 
       <!-- 우측 메뉴 -->
       <div class="flex gap-5">

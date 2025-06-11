@@ -17,7 +17,7 @@ const selectBtn = [
 
     <div class="p-5">
       <!-- 상단 -->
-      <img src="../picture/vlive/vlivem.jpg" class="rounded h-50 w-90" />
+      <img src="/picture/vlive/vlivem.jpg" class="rounded h-50 w-90" />
       <h1 class="py-10 text-center text-3xl flex justify-center gap-5">
         Re:Wind
         <p class="text-sky-300 font-bold">VLIVE</p>

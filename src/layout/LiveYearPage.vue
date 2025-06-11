@@ -47,7 +47,7 @@ const yearButtons = {
 const buttons = yearButtons[year] || yearButtons[Number(year)] || []
 
 // 연도 별 사진
-const yearPicture = ['src/picture/vlive/vlive1.jpg', 'src/picture/vlive/vlive2.jpg', 'src/picture/vlive/vlive3.jpg', 'src/picture/vlive/vlive4.jpg']
+const yearPicture = ['/new/picture/vlive/vlive1.jpg', '/new/picture/vlive/vlive2.jpg', '/new/picture/vlive/vlive3.jpg', '/new/picture/vlive/vlive4.jpg']
 const yearIndex = computed(() => {
   const idx = Number(year) - 2019
   return idx >= 0 && idx < yearPicture.length ? idx : 0
