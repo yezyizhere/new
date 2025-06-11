@@ -33,7 +33,7 @@ function menuOpen() {
       <!-- 메뉴 내용 -->
       <div class="px-7 py-5 flex flex-col gap-5 border-b-1 border-zinc-200">
         <router-link to="/">메인 페이지</router-link>
-        <router-link to="/test">테스트</router-link>
+        <router-link to="/live">라이브</router-link>
         <router-link to="/test">테스트</router-link>
         <router-link to="/test">테스트</router-link>
       </div>
