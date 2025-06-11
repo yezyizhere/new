@@ -31,7 +31,7 @@ const links = [
   'https://youtube.com/playlist?list=PLnje7IHR9mTbkPf-sYoW-NMsU5WoG2oSM&si=NKHS1RMqJ13scC2c',
 ]
 
-// 앨범 리스트트
+// 앨범 리스트
 const items = [
   {
     albumImage: 'https://lv2-cdn.azureedge.net/itzy/9acb66dbf7944c88a604feac448d7e65-IT%E2%80%99z%20Different.jpg',
@@ -140,7 +140,7 @@ const items = [
   },
 ]
 
-// 페이지네이션션
+// 페이지네이션
 const pageSize = 6
 const currentPage = ref(1)
 const totalPages = computed(() => Math.ceil(sortedItems.value.length / pageSize))
@@ -192,35 +192,35 @@ function getDdayPlus(startDateStr) {
         <!-- 왼쪽 -->
         <nav class="w-1/2 text-right pr-3">
           <div>19.02.12 있지 데뷔</div>
-          <div class="pt-3"><a :href="links[0]" target="_blank" rel="noopener">19.02.20 ITZY? ITZY!</a></div>
-          <div class="pt-15"><a :href="links[1]" target="_blank" rel="noopener">20.11.26 한국에 있지</a></div>
-          <div class="pt-15"><a :href="links[2]" target="_blank" rel="noopener">21.03.02 CSI</a></div>
-          <div class="pt-15"><a :href="links[3]" target="_blank" rel="noopener">21.12.06 bㅣㄴ틈있지 겨울방학 에디션</a></div>
-          <div class="pt-45"><a :href="links[4]" target="_blank" rel="noopener">22.09.21 LA에 있지</a></div>
-          <div class="pt-20"><a :href="links[5]" target="_blank" rel="noopener">24.02.08 IT'ZZZ</a></div>
-          <div class="pt-20"><a :href="links[6]" target="_blank" rel="noopener">24.11.14 IT'ZZZ S2</a></div>
+          <div class="pt-3"><a :href="links[0]" rel="noopener">19.02.20 ITZY? ITZY!</a></div>
+          <div class="pt-15"><a :href="links[1]" rel="noopener">20.11.26 한국에 있지</a></div>
+          <div class="pt-15"><a :href="links[2]" rel="noopener">21.03.02 CSI</a></div>
+          <div class="pt-15"><a :href="links[3]" rel="noopener">21.12.06 bㅣㄴ틈있지 겨울방학 에디션</a></div>
+          <div class="pt-45"><a :href="links[4]" rel="noopener">22.09.21 LA에 있지</a></div>
+          <div class="pt-20"><a :href="links[5]" rel="noopener">24.02.08 IT'ZZZ</a></div>
+          <div class="pt-20"><a :href="links[6]" rel="noopener">24.11.14 IT'ZZZ S2</a></div>
         </nav>
 
         <!-- 오른쪽 -->
         <nav class="w-1/2 border-l-2 text-left pl-3 border-gray-300">
-          <div class="pt-20"><a :href="links[7]" target="_blank" rel="noopener">20.01.21 파리에 있지</a></div>
-          <div class="pt-12"><a :href="links[8]" target="_blank" rel="noopener">21.01.01 bㅣㄴ틈있지</a></div>
-          <div class="pt-20"><a :href="links[9]" target="_blank" rel="noopener">21.08.17 CSI2</a></div>
+          <div class="pt-20"><a :href="links[7]" rel="noopener">20.01.21 파리에 있지</a></div>
+          <div class="pt-12"><a :href="links[8]" rel="noopener">21.01.01 bㅣㄴ틈있지</a></div>
+          <div class="pt-20"><a :href="links[9]" rel="noopener">21.08.17 CSI2</a></div>
           <div class="pt-20">
-            <a :href="links[10]" target="_blank" rel="noopener">
+            <a :href="links[10]" rel="noopener">
               22.05.02<br />
               bㅣㄴ틈있지 시즌2
             </a>
           </div>
           <div class="pt-3">
-            <a :href="links[11]" target="_blank" rel="noopener">
+            <a :href="links[11]" rel="noopener">
               22.05.04<br />
               있지코지하우스
             </a>
           </div>
-          <div class="pt-20"><a :href="links[12]" target="_blank" rel="noopener">23.10.04 다섯플릭스</a></div>
+          <div class="pt-20"><a :href="links[12]" rel="noopener">23.10.04 다섯플릭스</a></div>
           <div class="pt-25">
-            <a :href="links[13]" target="_blank" rel="noopener">
+            <a :href="links[13]" rel="noopener">
               24.08.29<br />
               내 생에 복날은
             </a>
@@ -291,14 +291,14 @@ function getDdayPlus(startDateStr) {
     </Transition>
     <!---------------------- 4번(기본) ---------------------->
     <section v-if="activeIndex === 3">
-      <a href="https://www.youtube.com/watch?v=1KhOhW_O8-k"><img src="https://lv2-cdn.azureedge.net/itzy/059ba67bbd2f4456b29a3db0d8545635-MV_C3_Full_2.jpg" class="mx-auto w-80 h-50 rounded" /></a>
+      <a href="https://www.youtube.com/watch?v=1KhOhW_O8-k"><img src="https://lv2-cdn.azureedge.net/itzy/059ba67bbd2f4456b29a3db0d8545635-MV_C3_Full_2.jpg" class="mx-auto w-80 h-50 rounded hover:scale-101 transition" /></a>
 
       <div class="text-center pt-10">
         <h1 class="text-lg">All in Us! 안녕하세요, ITZY입니다!</h1>
         <h2 class="text-sm pt-2">데뷔 {{ getDdayPlus(startDate) }}</h2>
       </div>
 
-      <div class="text-center pt-10">
+      <div class="text-center pt-5">
         <p class="pb-2">팬덤 <a href="https://midzy.kr" class="text-pink-400">MIDZY(믿지)</a></p>
         <p>
           응원봉
@@ -309,6 +309,7 @@ function getDdayPlus(startDateStr) {
             <span class="text-rose-400">링</span>
           </a>
         </p>
+        <div class="pt-5"><i class="pt-5 select-none text-zinc-400">궁금한 것을 눌러보세요</i></div>
       </div>
     </section>
   </section>
