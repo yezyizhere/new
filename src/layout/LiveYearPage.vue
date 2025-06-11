@@ -28,7 +28,7 @@ const yearButtons = {
   2021: [
     { name: '예지', url: 'https://drive.google.com/drive/folders/1hT9yoFv8nvQZtYSC1c37-gmsuSDbqGaN' },
     { name: '리아', url: 'https://drive.google.com/drive/folders/1b0E8WzR0jvbD79GsLv3TkPeFXSh00CKM' },
-    { name: '류진', url: 'https://drive.google.com/drive/folders/1RlO7리아-_0FkCn2cg62pPYmdUul0wndax' },
+    { name: '류진', url: 'https://drive.google.com/drive/folders/1RlO7I2-_0FkCn2cg62pPYmdUul0wndax' },
     { name: '채령', url: 'https://drive.google.com/drive/folders/1PwT4rDOB3ZwHKxiEQtzxfbP_a9fBDkqG' },
     { name: '유나', url: 'https://drive.google.com/drive/folders/1WASen2MHubeuxelBpZ03MMnHErL0VtPL' },
     { name: 'ITZY', url: 'https://drive.google.com/drive/folders/1r2xy51cPUdZYrFyv8dzAbZtB4zkA57Ib' },
