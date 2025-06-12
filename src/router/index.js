@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/pages/HomeView.vue'
 import LiveYearPage from '@/layout/LiveYearPage.vue'
+import Label from '@/layout/Label.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/cheer',
       name: 'cheer',
       component: () => import('@/pages/Cheer.vue'),
+    },
+    {
+      path: '/cheer/:label',
+      name: 'label',
+      component: Label,
     },
   ],
 })

@@ -35,6 +35,7 @@ function menuOpen() {
         <router-link to="/">메인 페이지</router-link>
         <router-link to="/live">라이브</router-link>
         <router-link to="/broadcast">공방참여</router-link>
+        <router-link to="/cheer">응원법</router-link>
         <router-link to="/test">테스트</router-link>
       </div>
     </nav>
