@@ -34,7 +34,7 @@ function melonPC() {
         window.open(urls[2], '_blank')
         setTimeout(() => {
           window.open(urls[3], '_blank')
-        })
+        }, 500)
       }, 500)
     }, 500)
   }, 500)
