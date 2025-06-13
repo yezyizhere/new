@@ -42,9 +42,9 @@ const router = createRouter({
       component: Label,
     },
     {
-      path: '/test',
-      name: 'test',
-      component: () => import('@/pages/Test.vue'),
+      path: '/streaming',
+      name: 'streaming',
+      component: () => import('@/pages/Streaming.vue'),
     },
   ],
 })

@@ -26,7 +26,7 @@ const selectSeason = [
     <section class="px-7 p-5 flex-1 h-full flex flex-col">
       <h1 class="text-center text-2xl mb-3">검하 비밀 기지</h1>
       <!-- 사진 버튼 -->
-      <nav class="rounded-lg border-2 flex-1 p-3">
+      <nav class="rounded-lg border-2 p-3">
         <nav class="grid grid-cols-2 gap-5">
           <div v-for="select in selectSeason" :key="select.name">
             <a :href="select.url" class="block w-full text-center py-3 rounded bg-zinc-800 hover:bg-pink-500 transition-colors ring ring-zinc-400">
