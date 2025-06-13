@@ -11,6 +11,9 @@ const TapSets = [
   ['tap1', 'tap3', 'tap2', 'tap5', 'tap4', 'tap6'],
 ]
 
+// 스밍 순서 긴거
+const TapSetting = ['tap1', 'tap2', 'tap3', 'tap4', 'tap5', 'tap1', 'tap5', 'tap4', 'tap3', 'tap2', 'tap1', 'tap4', 'tap5', 'tap2', 'tap3', 'tap1', 'tap3', 'tap2', 'tap5', 'tap4', 'tap6']
+
 // 멜론 링크
 const melonMap = {
   tap1: '39120868',
@@ -20,6 +23,39 @@ const melonMap = {
   tap5: '39120872',
   tap6: '38100192',
 }
+
+// 지니 링크
+const genieMap = {
+  tap1: '110421762',
+  tap2: '110421763',
+  tap3: '110421764',
+  tap4: '110421765',
+  tap5: '110421766',
+  tap6: '108065470',
+}
+
+// 벅스 링크
+const bugsMap = {
+  tap1: '33563976',
+  tap2: '33563977',
+  tap3: '33563978',
+  tap4: '33563979',
+  tap5: '33563980',
+  tap6: '33324399',
+}
+
+// 바이브 링크
+const vibeMap = {
+  tap1: '94581170',
+  tap2: '94581171',
+  tap3: '94581172',
+  tap4: '94581173',
+  tap5: '94581174',
+  tap6: '87485726',
+}
+
+// 스포티파이
+const spotify = 'https://open.spotify.com/playlist/3u1p3qFYWZF9lNrpSXBffW?si=1676186df0f9475d&nd=1&dlsi=0f407d44db5e4266'
 
 /********************* 고정사항 ********************/
 // 멜론 PC
@@ -48,17 +84,32 @@ function melonAndroid(idx) {
 }
 
 // 멜론 아이폰
-const melonIosBase = 'melonapp://play?ctype=1&menuid=1000002721&cid='
-const melonIosUrls = TapSets.map((taps) => melonIosBase + taps.map((tap) => melonMap[tap]).join(','))
-function melonIos(idx) {
-  const a = document.createElement('a')
-  a.href = melonIosUrls[idx]
-  a.target = '_blank'
-  a.rel = 'noopener noreferrer'
-  document.body.appendChild(a)
-  a.click()
-  document.body.removeChild(a)
-}
+const melonIosBase = 'meloniphone://play/?ctype=1&menuid=0&cid='
+const melonIosUrl = melonIosBase + TapSetting.map((tap) => melonMap[tap]).join(';')
+
+// 지니 PC
+const geniePCBase = 'https://www.genie.co.kr/player/shareProcessV2?xgnm='
+const geniePCUrl = geniePCBase + TapSetting.map((tap) => genieMap[tap]).join(';')
+
+// 지니 안드로이드
+const genieAndroidBase = 'cromegenie://scan/?landing_type=31&landing_target='
+const genieAndroidUrl = genieAndroidBase + TapSetting.map((tap) => genieMap[tap]).join(';')
+
+// 지니 아이폰
+const genieIosBase = 'ktolleh00167://landing/?landing_type=31&landing_target='
+const genieIosUrl = genieIosBase + TapSetting.map((tap) => genieMap[tap]).join(';')
+
+// 벅스 핸드폰
+const bugsPhoneBase = 'bugs3://app/tracks/lists?title=%EC%A0%84%EC%B2%B4%EB%93%A3%EA%B8%B0&miniplay=Y&track_ids='
+const bugsPhoneUrl = bugsPhoneBase + TapSetting.map((tap) => bugsMap[tap]).join('|')
+
+// 벅스 PC
+const bugsPCBase = 'https://music.bugs.co.kr/newPlayer?trackId='
+const bugsPCUrl = bugsPCBase + TapSetting.map((tap) => bugsMap[tap]).join(',')
+
+// 바이브 폰
+const vibeBase = 'vibe://listen?version=3&trackIds='
+const vibeUrl = vibeBase + TapSetting.map((tap) => vibeMap[tap]).join(',')
 
 // 장난
 const showPopup = ref(false)
@@ -82,12 +133,18 @@ function closePopup() {
       <button @click="melonAndroid(2)">멜안3</button>
       <button @click="melonAndroid(3)">멜안4</button>
       <button @click="openPopup" class="text-center">제목: 웅님의 사랑</button>
-      <div class="grid grid-cols-2 gap-5">
-        <button @click="melonIos(0)">멜아1</button>
-        <button @click="melonIos(1)">멜아2</button>
-        <button @click="melonIos(2)">멜아3</button>
-        <button @click="melonIos(2)">멜아4</button>
-      </div>
+      <a :href="melonIosUrl" target="_blank" rel="noopener noreferrer">아이폰</a>
+
+      <a :href="geniePCUrl">지니pc</a>
+      <a :href="genieAndroidUrl">지니안드</a>
+      <a :href="genieIosUrl">지니아이</a>
+
+      <a :href="bugsPhoneUrl">벅스 폰</a>
+      <a :href="bugsPCUrl">벅스 컴</a>
+
+      <a :href="vibeUrl">바이브 모바일</a>
+
+      <a :href="spotify">스포티파이</a>
     </section>
 
     <!-- 팝업 오버레이 -->
