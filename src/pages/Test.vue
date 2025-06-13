@@ -109,7 +109,10 @@ const bugsPCUrl = bugsPCBase + TapSetting.map((tap) => bugsMap[tap]).join(',')
 
 // 바이브 폰
 const vibeBase = 'vibe://listen?version=3&trackIds='
-const vibeUrl = vibeBase + TapSetting.map((tap) => vibeMap[tap]).join(',')
+const vibeAPPUrl = TapSets.map((taps) => vibeBase + taps.map((tap) => vibeMap[tap]).join(','))
+function vibeUrl(idx) {
+  window.open(vibeAPPUrl[idx], '_blank')
+}
 
 // 장난
 const showPopup = ref(false)
@@ -142,7 +145,10 @@ function closePopup() {
       <a :href="bugsPhoneUrl">벅스 폰</a>
       <a :href="bugsPCUrl">벅스 컴</a>
 
-      <a :href="vibeUrl">바이브 모바일</a>
+      <button @click="vibeUrl(0)">바이브 모바일</button>
+      <button @click="vibeUrl(1)">바이브2</button>
+      <button @click="vibeUrl(2)">바이브3</button>
+      <button @click="vibeUrl(3)">바이브4</button>
 
       <a :href="spotify">스포티파이</a>
     </section>
