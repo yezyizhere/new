@@ -268,14 +268,14 @@ function getDdayPlus(startDateStr) {
         <div class="pl-10 flex gap-2">
           <img src="https://lv2-cdn.azureedge.net/itzy/2aead6e90d624bdea2b95354ceb99a72-01-%EC%98%88%EC%A7%80-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
           <div class="flex flex-col justify-end">
-            <img src="/picture/sign/sign1.png" class="w-20" />
+            <a href="https://www.instagram.com/yezyizhere/"><img src="/picture/sign/sign1.png" class="w-20" /></a>
             <p>YEJI / 예지 <br />2000.05.26</p>
           </div>
         </div>
         <!-- 리아 -->
         <div class="pt-10 pl-10 flex gap-2">
           <div class="flex flex-col justify-end">
-            <img src="/picture/sign/sign2.png" class="w-20 pb-2" />
+            <a href="https://www.instagram.com/lia_loves___/"><img src="/picture/sign/sign2.png" class="w-20" /></a>
             <p>LIA / 리아 <br />2000.07.21</p>
           </div>
           <img src="https://lv2-cdn.azureedge.net/itzy/21b7b47fecd942bfa78082ab26cd5e0e-02-%EB%A6%AC%EC%95%84-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
@@ -284,14 +284,14 @@ function getDdayPlus(startDateStr) {
         <div class="pt-10 pl-5 flex gap-2">
           <img src="https://lv2-cdn.azureedge.net/itzy/0ecc7a02fe0a4b359ebb5334c586bb1d-03-%EB%A5%98%EC%A7%84-%EA%B3%B5%ED%99%88-C1-2.jpg" class="w-50" />
           <div class="flex flex-col justify-end">
-            <img src="/picture/sign/sign3.png" class="w-20" />
+            <a href="https://www.instagram.com/iamfinethankyouandryu/"><img src="/picture/sign/sign3.png" class="w-20" /></a>
             <p>RYUJIN / 류진 <br />2001.04.17</p>
           </div>
         </div>
         <!-- 채령 -->
         <div class="pt-10 pl-5 flex gap-2">
           <div class="flex flex-col justify-end">
-            <img src="/picture/sign/sign4.png" class="w-20" />
+            <a href="https://www.instagram.com/chaerrry0/"><img src="/picture/sign/sign4.png" class="w-20" /></a>
             <p>
               CHAERYEONG <br />
               채령 <br />2001.06.05
@@ -303,7 +303,7 @@ function getDdayPlus(startDateStr) {
         <div class="pt-10 pl-10 flex gap-2">
           <img src="https://lv2-cdn.azureedge.net/itzy/ec6f74c083be48dea326d2c01372bac9-05-%EC%9C%A0%EB%82%98-%EA%B3%B5%ED%99%88-C1-1.jpg" class="w-50" />
           <div class="flex flex-col justify-end">
-            <img src="/picture/sign/sign5.png" class="w-20" />
+            <a href="https://www.instagram.com/igotyuandme/"><img src="/picture/sign/sign5.png" class="w-20" /></a>
             <p>YUNA / 유나 <br />2003.12.09</p>
           </div>
         </div>

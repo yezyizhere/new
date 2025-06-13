@@ -43,6 +43,20 @@ const boxItems = [
     title: '음반 (앨범)',
   },
 ]
+
+// 음반
+const cd = [
+  { cdname: '사운드웨이브', cdurl: 'https://bit.ly/3H5rORC' },
+  { cdname: '메이크스타', cdurl: 'https://bit.ly/4mj9DID' },
+  { cdname: '뮤직코리아', cdurl: 'https://bit.ly/3S0X3zJ' },
+  { cdname: '위드뮤', cdurl: 'https://bit.ly/4ddcsGL' },
+  { cdname: 'YES 24', cdurl: 'https://bit.ly/3GLzxVb' },
+  { cdname: '알라딘', cdurl: 'https://bit.ly/4iVguoA' },
+  { cdname: '뮤직플랜트', cdurl: 'https://bit.ly/4k9yi0R' },
+  { cdname: '블루드림', cdurl: 'https://bit.ly/3YERDOy' },
+  { cdname: '애플뮤직', cdurl: 'https://bit.ly/44tHpEt' },
+  { cdname: 'FANS SHOP', cdurl: 'https://bit.ly/44zzAgv' },
+]
 </script>
 
 <template>
@@ -69,6 +83,18 @@ const boxItems = [
       </transition>
 
       <!-- 2번 -->
+      <button class="w-full bg-zinc-800 rounded-lg py-3 px-4 text-left font-semibold transition-colors focus:outline-none" @click="toggleAccordion(3)">💿 앨범 구매 링크</button>
+      <transition name="accordion">
+        <div v-if="openIndex === 3" class="bg-zinc-700 rounded-b-lg px-4 py-3 text-sm grid grid-cols-3 gap-2 items-center justify-center text-center">
+          <div v-for="selectcd in cd" :key="selectcd.cdname">
+            <a :href="selectcd.cdurl" class="block w-full text-center py-3 rounded bg-zinc-800 hover:bg-pink-500 transition-colors ring ring-zinc-400">
+              {{ selectcd.cdname }}
+            </a>
+          </div>
+        </div>
+      </transition>
+
+      <!-- 3번 -->
       <button class="w-full bg-zinc-800 rounded-lg py-3 px-4 text-left font-semibold transition-colors focus:outline-none" @click="toggleAccordion(1)">공개방송 참여 안내</button>
       <transition name="accordion">
         <div v-if="openIndex === 1" class="bg-zinc-700 rounded-b-lg px-4 py-3 text-sm flex flex-col gap-2">
@@ -84,7 +110,7 @@ const boxItems = [
         </div>
       </transition>
 
-      <!-- 3번 -->
+      <!-- 4번 -->
       <button class="w-full bg-zinc-800 rounded-lg py-3 px-4 text-left font-semibold transition-colors focus:outline-none" @click="toggleAccordion(2)">공개방송 현장 안내</button>
       <transition name="accordion">
         <div v-if="openIndex === 2" class="bg-zinc-700 rounded-b-lg px-4 py-3 text-sm flex flex-col gap-2">
@@ -99,7 +125,7 @@ const boxItems = [
         </div>
       </transition>
 
-      <!-- 4번 -->
+      <!-- 5번 -->
       <button class="w-full bg-pink-500 rounded-lg py-3 px-4 font-semibold text-white transition-colors focus:outline-none" @click="goToPage">
         <div class="flex justify-between w-full items-center">
           <p>응원법</p>

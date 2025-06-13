@@ -12,9 +12,9 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/test',
-      name: 'test',
-      component: () => import('@/pages/Test.vue'),
+      path: '/gallery',
+      name: 'gallery',
+      component: () => import('@/pages/Gallery.vue'),
     },
     {
       path: '/live',
@@ -40,6 +40,11 @@ const router = createRouter({
       path: '/cheer/:label',
       name: 'label',
       component: Label,
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('@/pages/Test.vue'),
     },
   ],
 })
